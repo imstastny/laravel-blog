@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
-@section('title','Post')
+@section('title',$post->title)
 
 @section('content')
-    <p>{{$slug}}</p>
+    <h1>{{$post->title}}</h1>
+    <p>{{$post->post}}</p>
 @endsection
