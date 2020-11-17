@@ -6,7 +6,7 @@ use App\Http\Controllers\PostController;
 
 
 Route::get('/', HomeController::class);
-Route::get('/posts/{slug}', [PostController::class, 'show']);
+Route::get('/posts/{post:slug}', [PostController::class, 'show']);
 Route::view('/about', 'about');
 Route::view('/contact', 'contact');
 Route::view('/login', 'login');
